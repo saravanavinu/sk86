@@ -1,0 +1,97 @@
+question 1
+
+
+import java.util.*;
+
+public class ProductInventory {
+    public static void main(String[] args) {
+
+        Map<String, Integer> products = new HashMap<>();
+
+        // Add Product
+        products.put("Laptop", 10);
+        products.put("Mobile", 20);
+        products.put("Keyboard", 15);
+
+        // Search Product
+        System.out.println("Laptop Quantity: " + products.get("Laptop"));
+
+        // Update Quantity
+        products.put("Laptop", 25);
+
+        // Delete Product
+        products.remove("Keyboard");
+
+        // Display All Products
+        System.out.println("Products:");
+        for (Map.Entry<String, Integer> entry : products.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
+
+
+
+question 2
+
+import java.util.*;
+
+public class MovieRating {
+    public static void main(String[] args) {
+
+        Map<String, Double> movies = new HashMap<>();
+
+        // Add Movie
+        movies.put("Leo", 8.5);
+        movies.put("Vikram", 9.0);
+        movies.put("Jailer", 8.2);
+
+        // Search Movie
+        System.out.println("Leo Rating: " + movies.get("Leo"));
+
+        // Update Rating
+        movies.put("Leo", 9.0);
+
+        // Delete Movie
+        movies.remove("Jailer");
+
+        // Display All Movies
+        System.out.println("Movies:");
+        for (Map.Entry<String, Double> entry : movies.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
+
+
+question 3
+
+
+import java.util.*;
+
+public class LibraryBook {
+    public static void main(String[] args) {
+
+        Map<Integer, String> books = new HashMap<>();
+
+        // Add Book
+        books.put(101, "Java Programming");
+        books.put(102, "Python Programming");
+        books.put(103, "Data Structures");
+
+        // Search Book
+        System.out.println("Book: " + books.get(101));
+
+        // Update Book Details
+        books.put(101, "Advanced Java Programming");
+
+        // Remove Book
+        books.remove(103);
+
+        // Display All Books
+        System.out.println("Books:");
+        for (Map.Entry<Integer, String> entry : books.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+}
